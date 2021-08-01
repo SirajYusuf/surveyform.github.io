@@ -1,0 +1,79 @@
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<div class="container">
+  <header>
+    <h1 id="title">Gaming Survey Forms</h1>
+    <p id="description">Help us in building our game by filling this form</p>
+    </header>
+<div>
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input class="form-control" id="name" placeholder="Please enter your name here" type="text" name="name" required>
+  </div>
+  <div class="form-group" >
+    <label id="email-label" for="email">e-mail</label>
+    <input id="email" class="form-control" type="email" placeholder="Please enter your e-mail address here " name="email" required>
+  </div>
+  <div class="form-group">
+    <label id="number-label" class="" for="number">Age</label>
+    <input id="number" class="form-control" type="number" placeholder="Select you age" name="age" min="13" max="99">
+  </div>
+  <div class="form-group">
+    <p>Choose your platform</p>
+    <select id="dropdown" name="platform" class="option-class" required>
+      <option default selected value>Select any one</option>
+      <option value="pc">PC</option>
+      <option value="ps">PS</option>
+      <option value="x-box">X-box</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <p>Select your prefered category</p>
+    <label>
+      <input type="radio" name="category" value="fps" class="input-checkbox">FPS
+    </label>
+     <label>
+      <input type="radio" name="category" value="mmo" class="input-checkbox">MMO
+    </label>
+     <label>
+      <input type="radio" name="category" value="rpg"  class="input-checkbox">RPG
+    </label>
+     <label>
+      <input type="radio" name="category" value="others " class="input-checkbox">Others
+    </label>
+    
+  </div>
+  <div class="form-group">
+    <p class="select-class">Select your favourite game</p>
+   <label>
+    <input type="checkbox" name="prefer" value="Apex" checked class="input-checkbox" > Apex legends
+    </label>
+    <label>
+      <input type="checkbox" name="prefer" value="COD" class="input-checkbox"> Call of duty: Warzone
+    </label>
+    <label>
+      <input type="checkbox" name="prefer" value="overwatch" 
+            class="input-checkbox" > overwatch
+    </label>
+    <label>
+      <input type="checkbox" name="prefer" value="r6" class="input-checkbox"> Rainbow six siege
+    </label>
+    <label>
+      <input type="checkbox" name="prefer" value="valorant" class="input-checkbox"> Valorant
+    </label>
+  </div>
+  <div id="text-class" class="form-group">
+    <p>Why is it your favourite ?</p>
+    <textarea id="comments" name="commentbox" placeholder="Type your text here...." class="input-textarea" ></textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" id="submit" class="submit-button">
+      submit
+    </button>
+  </div>
+</form>
+</div>
+    
+</div>
